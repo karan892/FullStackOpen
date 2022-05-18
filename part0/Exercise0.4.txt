@@ -1,0 +1,30 @@
+title Excercise 0.4 ( Traditional App - Non Ajax)
+
+
+
+note over Browser:
+Enter the note and click on Save button
+end note
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/new_note
+note over Server:
+Saves the note to the Array and sends back refresh location
+end note 
+Server->Browser:  /exampleapp/notes
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/notes
+Server->Browser: HTML Code
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/main.css
+Server->Browser: main.css
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/main.js
+Server->Browser: main.js
+note over Browser:
+browser starts executing js code
+that requests JSON data from server 
+end note
+
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: [{"content":"don't forget to like and subscribe","date":"2022-05-17T20:54:09.966Z"},..]
+
+note over Browser:
+browser executes the event handler
+that renders notes to display
+end note

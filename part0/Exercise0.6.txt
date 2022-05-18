@@ -1,0 +1,24 @@
+title Excercise 0.6 ( SPA - With Ajax)
+
+
+
+note over Browser:
+Enter the note and click on Save button
+end note
+note over Browser:
+JS event handler creates a note object including the note entered and attaching a new Date
+end note
+note over Browser:
+JS code pushes the note object to the Notes array
+end note
+note over Browser:
+JS code calls redrawNotes() function to list all the notes from Notes array
+end note
+note over Browser:
+JS code calls sendtoServer(note) function to send the note to Server via XMLHttpRequest
+end note
+Browser->Server: HTTP Post https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over Server:
+Saves the note to the Array and sends back Acknowledgement
+end note 
+Server->Browser: 201 message: Note Created
